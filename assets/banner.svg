@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16092a"/>
+      <stop offset="50%" stop-color="#0a0713"/>
+      <stop offset="100%" stop-color="#0b1020"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e879f9"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#e879f9" stop-opacity=".40"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <circle cx="140" cy="80" r="250" fill="url(#g1)"/>
+  <circle cx="1060" cy="330" r="230" fill="url(#g2)"/>
+
+  <!-- piringan hitam -->
+  <g transform="translate(985 115)">
+    <circle r="72" fill="#0d0a16" stroke="url(#acc)" stroke-width="3"/>
+    <circle r="52" fill="none" stroke="#ffffff" stroke-opacity=".10" stroke-width="1.5"/>
+    <circle r="40" fill="none" stroke="#ffffff" stroke-opacity=".08" stroke-width="1.5"/>
+    <circle r="26" fill="url(#acc)" opacity=".85"/>
+    <circle r="6" fill="#0a0713"/>
+    <g transform="rotate(0 0 0)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+      <rect x="-2" y="-70" width="4" height="18" rx="2" fill="#ffffff" fill-opacity=".25"/>
+    </g>
+  </g>
+
+  <!-- equalizer -->
+  <g>
+    <rect x="120" y="330" width="16" height="30" rx="8" fill="url(#acc)" opacity=".9">
+      <animate attributeName="height" values="24;56;18;44;24" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="336;304;342;316;336" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="148" y="310" width="16" height="50" rx="8" fill="url(#acc)" opacity=".9">
+      <animate attributeName="height" values="50;22;46;28;50" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="310;338;314;332;310" dur="1.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="176" y="322" width="16" height="38" rx="8" fill="url(#acc)" opacity=".9">
+      <animate attributeName="height" values="34;62;26;48;34" dur="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="322;294;334;312;322" dur="1.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="204" y="300" width="16" height="60" rx="8" fill="url(#acc)" opacity=".9">
+      <animate attributeName="height" values="60;30;52;36;60" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="300;330;308;324;300" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- judul -->
+  <text x="120" y="130" font-size="84" font-weight="800" fill="#f3eefb" letter-spacing="-2">🎵 NadaKu</text>
+  <text x="120" y="182" font-size="30" fill="url(#acc)" font-weight="700">Dengar Lagu Penuh • Cari Musik Sebebasnya</text>
+  <text x="120" y="222" font-size="22" fill="#a99bbb">Lagu utuh gratis dari Audius + katalog lengkap iTunes.</text>
+  <text x="120" y="256" font-size="18" fill="#7d6f91">Tanpa API key • Legal • Langsung jalan di browser HP</text>
+
+  <!-- chip -->
+  <g>
+    <rect x="260" y="326" width="118" height="36" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".18"/>
+    <text x="319" y="350" font-size="17" fill="#f5d0fe" text-anchor="middle">React 18</text>
+    <rect x="388" y="326" width="132" height="36" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".18"/>
+    <text x="454" y="350" font-size="17" fill="#ddd6fe" text-anchor="middle">TypeScript</text>
+    <rect x="530" y="326" width="112" height="36" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".18"/>
+    <text x="586" y="350" font-size="17" fill="#bae6fd" text-anchor="middle">Tailwind</text>
+    <rect x="652" y="326" width="150" height="36" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".18"/>
+    <text x="727" y="350" font-size="17" fill="#fbcfe8" text-anchor="middle">Audius + iTunes</text>
+  </g>
+</svg>
